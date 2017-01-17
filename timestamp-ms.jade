@@ -1,0 +1,27 @@
+doctype
+html
+  head
+    title API Basejump: #{title} - FreeCodeCamp
+  body
+    header
+      link(rel='stylesheet', href='style.css')
+      h1 API Basejump: #{title} - FreeCodeCamp
+    .container
+      .main-content
+        block content
+            ol User stories:
+                li I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+                li If it does, it returns both the Unix timestamp and the natural language form of that date.
+                li If it does not contain a date or Unix timestamp, it returns null for those properties.
+            h3 Example usage:
+            label.bold https://chalenges-pepetata.c9users.io/January%2016,%202017
+            br
+            label.bold https://chalenges-pepetata.c9users.io/1484600756444
+            h3 Example output:
+            label.bold { "unix": 1484600756444, "natural": "January 16, 2017" }  
+            br
+    footer
+        p Running on node with Express, Jade and Stylus
+        p Inspired by Flavio Ferreira
+      
+    
